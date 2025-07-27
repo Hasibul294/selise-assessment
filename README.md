@@ -19,12 +19,6 @@ A modern, full-featured studio booking platform built with Next.js 15, React 19,
 - **Radius Search**: Find studios within specified distance
 - **Graceful Fallbacks**: Manual area search when location access is denied
 
-### 🎯 Studio Management
-
-- **Comprehensive Listings**: 55+ studios with detailed information
-- **Rich Studio Profiles**: Images, amenities, ratings, and pricing
-- **Real-time Availability**: Live availability checking
-- **Studio Details**: Operating hours, contact info, and descriptions
 
 ### 📅 Booking System
 
@@ -43,19 +37,7 @@ A modern, full-featured studio booking platform built with Next.js 15, React 19,
 - **Booking Details**: Modal view with complete booking information
 - **Statistics**: Quick overview of booking counts
 
-### 🎨 User Interface
 
-- **Modern Design**: Clean, professional Tailwind CSS styling
-- **Active Navigation**: Highlighted current page indicators
-- **Loading States**: Smooth loading indicators and animations
-- **Error Handling**: User-friendly error messages and recovery options
-- **Accessibility**: ARIA labels and keyboard navigation support
-
-### 📱 Responsive Experience
-
-- **Mobile Optimized**: Touch-friendly interface for mobile devices
-- **Progressive Enhancement**: Works without JavaScript for basic functionality
-- **Fast Performance**: Optimized bundle size and lazy loading
 
 ## 🛠️ Technology Stack
 
@@ -118,8 +100,6 @@ Make sure you have the following installed on your machine:
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-## 📁 Project Structure
-
 ```
 src/
 ├── app/
@@ -147,126 +127,6 @@ src/
     └── locationUtils.ts     # Geolocation utilities
 ```
 
-## 🎯 Usage Guide
-
-### Basic Search
-
-1. **Text Search**: Type area names (e.g., "Gulshan", "Dhanmondi") for auto-complete suggestions
-2. **Location Search**: Click "Use Current Location" to find nearby studios
-3. **Filters**: Use radius, studio type, price range, and rating filters
-4. **Reset**: Click "Reset" to clear all filters
-
-### Booking a Studio
-
-1. Click "Book Now" on any studio card
-2. Select your preferred date and time
-3. Enter your contact information
-4. Confirm your booking
-5. Save your booking confirmation details
-
-### Managing Bookings
-
-1. Navigate to "Booking" page in the header
-2. View all your bookings with filtering options
-3. Search bookings by studio name or user
-4. Click on any booking for detailed information
-
-### Location Features
-
-1. **Enable Location**: Click "Use Current Location" button
-2. **Allow Access**: Grant location permission when prompted
-3. **View Results**: Studios sorted by distance with radius filtering
-4. **Fallback**: Use manual area search if location access is denied
-
-## 🔧 Configuration
-
-### Studio Data
-
-Studios are configured in `src/data/studios.ts` with the following structure:
-
-```typescript
-interface Studio {
-  Id: number;
-  Name: string;
-  Type: string;
-  Location: {
-    City: string;
-    Area: string;
-    Address: string;
-    Coordinates: { Latitude: number; Longitude: number };
-  };
-  Contact: { Phone: string; Email: string };
-  Amenities: string[];
-  Description: string;
-  PricePerHour: number;
-  Currency: string;
-  Availability: { Open: string; Close: string };
-  Rating: number;
-  Images: string[];
-}
-```
-
-### Adding New Studios
-
-1. Add studio data to `src/data/studios.ts`
-2. Ensure all required fields are included
-3. Add appropriate coordinates for location-based search
-
-## 🌐 Browser Compatibility
-
-- **Modern Browsers**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
-- **Mobile Browsers**: iOS Safari 14+, Chrome Mobile 90+
-- **Geolocation**: Requires HTTPS in production for location services
-- **JavaScript**: Progressive enhancement - basic functionality without JS
-
-## 📱 Mobile Features
-
-- **Touch Optimized**: Large touch targets and gesture support
-- **Responsive Grid**: Adaptive layout for different screen sizes
-- **Mobile Navigation**: Collapsible mobile menu
-- **Touch Gestures**: Swipe and tap interactions
-
-## 🔒 Privacy & Security
-
-- **Location Data**: Not stored permanently, only used for search
-- **User Data**: Booking information stored locally in browser
-- **No Tracking**: No third-party analytics or tracking
-- **Secure**: HTTPS required for location services in production
-
-## 🚀 Deployment
-
-### Deploy on Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Deploy with one click
-
-### Manual Deployment
-
-1. Build the project: `npm run build`
-2. Start production server: `npm run start`
-3. Ensure HTTPS for location features
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is part of the Selise Assessment and is for educational/evaluation purposes.
-
-## 🆘 Support
-
-If you encounter any issues:
-
-1. Check the browser console for error messages
-2. Ensure location services are enabled for location-based search
-3. Try clearing browser cache and localStorage
-4. Contact: [Your Contact Information]
 
 ## 🔗 Links
 
