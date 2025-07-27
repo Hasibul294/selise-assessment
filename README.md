@@ -19,7 +19,6 @@ A modern, full-featured studio booking platform built with Next.js 15, React 19,
 - **Radius Search**: Find studios within specified distance
 - **Graceful Fallbacks**: Manual area search when location access is denied
 
-
 ### 📅 Booking System
 
 - **Interactive Booking Modal**: Professional booking interface
@@ -36,8 +35,6 @@ A modern, full-featured studio booking platform built with Next.js 15, React 19,
 - **Search Functionality**: Search bookings by studio name or user
 - **Booking Details**: Modal view with complete booking information
 - **Statistics**: Quick overview of booking counts
-
-
 
 ## 🛠️ Technology Stack
 
@@ -100,38 +97,10 @@ Make sure you have the following installed on your machine:
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-```
-src/
-├── app/
-│   ├── components/           # Reusable React components
-│   │   ├── Header.tsx       # Navigation header with active links
-│   │   ├── Footer.tsx       # Site footer
-│   │   ├── SearchBar.tsx    # Advanced search with location services
-│   │   ├── StudiosList.tsx  # Studio listings with filtering
-│   │   ├── StudioCard.tsx   # Individual studio display
-│   │   └── BookingModal.tsx # Booking interface
-│   ├── about/               # About Us page
-│   ├── contact/             # Contact Us page
-│   ├── bookings/            # Bookings management page
-│   ├── layout.tsx           # Root layout component
-│   ├── page.tsx             # Home page
-│   └── globals.css          # Global styles
-├── constants/
-│   └── navLinks.ts          # Navigation configuration
-├── data/
-│   └── studios.ts           # Studio data (55+ studios)
-├── types/
-│   └── studio.ts            # TypeScript interfaces
-└── utils/
-    ├── bookingUtils.ts      # Booking management utilities
-    └── locationUtils.ts     # Geolocation utilities
-```
-
-
 ## 🔗 Links
 
 - **GitHub Repository**: [https://github.com/Hasibul294/selise-assessment](https://github.com/Hasibul294/selise-assessment)
-- **Live Demo**: [Add your deployment URL]
+- **Live Demo**: [https://selise-assessment-ioex.vercel.app/]
 - **Next.js Documentation**: [https://nextjs.org/docs](https://nextjs.org/docs)
 
 ---
