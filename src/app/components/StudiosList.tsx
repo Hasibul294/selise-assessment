@@ -34,7 +34,7 @@ const StudiosList: React.FC = () => {
           return false;
         }
       }
-      // Text-based location filter - search in both Area and City
+      // Text-based filter for locaiton only on Area
       else if (currentFilters.location) {
         const searchTerm = currentFilters.location.toLowerCase();
         const areaMatch = studio.Location.Area.toLowerCase().includes(searchTerm);
@@ -198,14 +198,6 @@ const StudiosList: React.FC = () => {
           </div>
         )}
 
-        {/* Load More Button (if needed for pagination) */}
-        {sortedStudios.length > 0 && sortedStudios.length >= 12 && (
-          <div className="text-center mt-12">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg border-2 border-blue-600 font-semibold hover:bg-blue-50 transition-colors duration-200">
-              Load More Studios
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );
